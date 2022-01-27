@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services page</title>
+    <link rel="stylesheet" href="college.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pacifico&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="dashboard.html"><img src="imagescollege/logo4.png"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="dashboard.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="online.html">ONLINE SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html" class="red-btn hero-btn">LOGOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+       <h1>Our Services</h1>
+    </section>
+    <section class="service">
+        <h1>Services We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam asperiores necessitatibus, vitae ab, sed eligendi modi quibusdam rem itaque quia minima perspiciatis, ea accusantium aut distinctio est enim! Commodi, est.</p>
+        <div class="row">
+            <div class="service-col">
+                <h3>FOOD</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores qui soluta blanditiis quidem nemo reiciendis, iure corrupti odio assumenda illo aperiam aliquid enim autem minus alias sint delectus impedit? Eveniet.</p>
+            </div>
+            <div class="service-col">
+             <h3>STATIONARY</h3>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores qui soluta blanditiis quidem nemo reiciendis, iure corrupti odio assumenda illo aperiam aliquid enim autem minus alias sint delectus impedit? Eveniet.</p>
+         </div>
+        </div>
+      </section>
+      <section class="Facilities">
+          <h1>Our Facilities</h1>
+          <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora et dicta consectetur ea, excepturi, id repellat voluptas velit, esse quibusdam fuga asperiores. Mollitia, possimus recusandae assumenda hic dolores laboriosam repudiandae.</P>
+          <div class="row">
+          <div class="Facilities-col">
+              <img src="imagescollege/library.png" alt="">
+              <h3>World Class Library</h3>
+              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis assumenda explicabo repudiandae itaque officiis repellendus in necessitatibus ullam vero suscipit. Ab porro consectetur iste laborum aspernatur libero atque culpa fugit.</P>
+          </div>
+          <div class="Facilities-col">
+             <img src="imagescollege/basketball.png" alt="">
+             <h3>Largest Play-Ground</h3>
+             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis assumenda explicabo repudiandae itaque officiis repellendus in necessitatibus ullam vero suscipit. Ab porro consectetur iste laborum aspernatur libero atque culpa fugit.</P>
+         </div>
+         <div class="Facilities-col">
+             <img src="imagescollege/cafeteria.png" alt="">
+             <h3>Tasty And Healthy Food</h3>
+             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis assumenda explicabo repudiandae itaque officiis repellendus in necessitatibus ullam vero suscipit. Ab porro consectetur iste laborum aspernatur libero atque culpa fugit.</P>
+         </div>
+     </div>
+      </section>
+    
+     <section class="end">
+         <p><i>"Don't let someone snatch your smile."</i></p>
+     </section>
+     
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+             navLinks.style.right="0";
+        }
+        function hideMenu(){
+             navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

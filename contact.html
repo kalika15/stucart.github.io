@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="college.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pacifico&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="dashboard.html"><img src="imagescollege/logo4.png"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="dashboard.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="online.html">ONLINE SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html" class="red-btn hero-btn">LOGOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+       <h1>Contact Us</h1>
+    </section>
+     <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.1930711731643!2d80.19044201487269!3d26.449504783329274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c49fa39cfefaf%3A0x1716805077816869!2sPranveer%20Singh%20Institute%20Of%20Technology%2C%20Kanpur!5e0!3m2!1sen!2sin!4v1641560540841!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+     </section>
+     <section class="contact-us">
+          <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home" aria-hidden="true" ></i>
+              <span>
+                <h5>XYZ road ABC building</h5>
+                <p>NH-2 bhauti,kanpur </p>
+              </span>
+            </div>
+            <div>
+                <i class="fa fa-phone" aria-hidden="true" ></i>
+                <span>
+                    <h5>+1 0238750302</h5>
+                    <p>Monday to Saturday , 10AM to 6PM </p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <span>
+                    <h5>stucart1323341@gmail.com</h5>
+                    <p>Email us for query</p>
+                </span>
+            </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text"name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text"name="subject" 
+                    placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message"placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+            
+
+          </div>
+     </section>
+    
+     <section class="end">
+         <p><i>"Don't let someone snatch your smile."</i></p>
+     </section>
+     
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+             navLinks.style.right="0";
+        }
+        function hideMenu(){
+             navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

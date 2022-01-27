@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="college.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pacifico&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="dashboard.html"><img src="imagescollege/logo4.png"></a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="dashboard.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICES</a></li>
+                    <li><a href="online.html">ONLINE SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html" class="red-btn hero-btn">LOGOUT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+        </nav>
+       <h1>About Us</h1>
+    </section>
+     <section class="about-us">
+      <div class="row">
+          <div class="about-col">
+            <h1>We Have The Best Hostel Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptas voluptate omnis. Quo dolor voluptatibus error voluptas incidunt illum voluptatem assumenda qui consequuntur amet obcaecati optio adipisci, ducimus, eos officiis maxime accusantium numquam. Commodi illum suscipit neque asperiores nobis explicabo et iure consequuntur corporis nemo nulla omnis ea laborum praesentium, natus aperiam dolorem tenetur at quis, iusto maiores! Sed pariatur corrupti sequi expedita excepturi!</p>
+            <a href="service.html" class="hero-btn red-btn">EXPLORE NOW</a>
+          </div>
+          <div class="about-col">
+            <img src="imagescollege/services.png" alt="">
+        </div>
+      </div>
+     </section>
+    
+     <section class="end">
+         <p><i>"Don't let someone snatch your smile."</i></p>
+     </section>
+     
+    <script>
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+             navLinks.style.right="0";
+        }
+        function hideMenu(){
+             navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
